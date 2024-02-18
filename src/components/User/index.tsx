@@ -40,7 +40,7 @@ const User: React.FC<{}> = ({}): JSX.Element => {
 
   return (
     <div className="mt-12">
-      <h1 className="font-bold text-center lg:text-4xl md:text-3xl sm:text-2xl xs:text-6xl mb-[40px]">Users</h1>
+      <h1 className="font-bold text-center text-4xl max-md:text-3xl max-sm:text-2xl lg:mb-[40px]">Users</h1>
       <div className="lg:max-w-lg md:max-w-md sm:max-w-sm xs:max-w-xs mx-auto">
         <div className="lg:max-h-[85vh] md:max-h-[75vh] sm:max-h-[70vh] xs:max-h-[65vh] p-4">
           {/* Infinite Scroll Component Starts Here*/}

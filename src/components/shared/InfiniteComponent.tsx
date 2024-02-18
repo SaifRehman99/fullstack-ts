@@ -16,7 +16,7 @@ const Index: React.FC<InfiniteScrollType> = ({ data, loading, currentPage, total
         </div>
       }
       // height={700}
-      endMessage={<NotFound text={endMessageText} height={50} width={50} textFont="text-sm" />}
+      endMessage={<NotFound text={endMessageText} height={80} width={80} textFont="text-sm" />}
     >
       {/* Component Children Below */}
       {children}
