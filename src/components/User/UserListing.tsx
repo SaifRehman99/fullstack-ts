@@ -1,10 +1,10 @@
-import { UserData } from "@/types/user.type";
+import { UserData } from "types/user.type";
 
 const UserListing: React.FC<{ user: UserData }> = ({ user }): JSX.Element => {
   return (
-    <div className="flex gap-6 mb-8 justify-center">
+    <div className="flex mb-8 justify-around">
       <div className="avatar">
-        <div className="w-24 rounded-full">
+        <div className="max-2xl:w-28 max-xl:w-20 max-lg:w-20 max-md:w-20 max-sm:w-16 rounded-full">
           <img src={user.avatar} />
         </div>
       </div>

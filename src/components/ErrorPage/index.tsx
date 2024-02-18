@@ -1,12 +1,8 @@
 import React from "react";
-import emptySvg from "../../assets/emptySvg.svg";
-import { ErrorType } from "@/types/error.type";
+import emptySvg from "assets/emptySvg.svg";
+import { ErrorType } from "types/error.type";
 
-const index: React.FC<ErrorType> = ({
-  text = "Sorry we couldn't find the page you're looking for",
-  buttonLink = "/dashboard",
-  buttonText = "Back to Dashboard",
-}) => {
+const index: React.FC<ErrorType> = ({ text = "Sorry we couldn't find the page you're looking for", buttonLink = "/dashboard", buttonText = "Back to Dashboard" }) => {
   return (
     <>
       <div className="h-screen w-screen bg-gray-50 flex items-center">
@@ -15,10 +11,7 @@ const index: React.FC<ErrorType> = ({
             <div className="text-7xl text-green-500 font-dark font-extrabold mb-8"> 404</div>
             <p className="text-2xl md:text-3xl font-light leading-normal mb-8">{text}</p>
 
-            <a
-              href={buttonLink}
-              className="px-5 inline py-3 text-sm font-medium leading-5 shadow-2xl text-white transition-all duration-400 border border-transparent rounded-lg focus:outline-none bg-green-600 active:bg-red-600 hover:bg-red-700"
-            >
+            <a href={buttonLink} className="px-5 inline py-3 text-sm font-medium leading-5 shadow-2xl text-white transition-all duration-400 border border-transparent rounded-lg focus:outline-none bg-green-600 active:bg-red-600 hover:bg-red-700">
               {buttonText}
             </a>
           </div>

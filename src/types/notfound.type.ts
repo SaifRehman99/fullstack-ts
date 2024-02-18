@@ -3,4 +3,5 @@ export type NotFoundType = {
   height?: number;
   width?: number;
   customSvg?: any;
+  textFont?: string;
 };

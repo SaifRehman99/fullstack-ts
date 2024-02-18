@@ -1,11 +1,7 @@
 import User from "./components/User";
 
-function App() {
-  return (
-    <div>
-      <User />
-    </div>
-  );
-}
+const App: React.FC<{}> = ({}): JSX.Element => {
+  return <User />;
+};
 
 export default App;

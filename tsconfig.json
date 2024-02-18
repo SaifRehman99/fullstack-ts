@@ -1,16 +1,16 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
+    "baseUrl": "src",
 
     /* Paths Below */
-    "paths": {
-      "@/*": ["src/*"],
-      "@components/*": ["src/components/*"],
-      "@types/*": ["src/types/*"],
-      "@utils/*": ["src/utils/*"],
-      "@hooks/*": ["src/hooks/*"],
-      "@assets/*": ["src/assets/*"],
-    },
+    // "paths": {
+    //   "@components/*": ["./components/*"],
+    //   "@types/*": ["./types/*"],
+    //   "@utils/*": ["./utils/*"],
+    //   "@hooks/*": ["./hooks/*"],
+    //   "@assets/*": ["./assets/*"],
+    //   "@shared/*": ["./components/shared/*"],
+    // },
     "target": "ES2020",
     "useDefineForClassFields": true,
     "lib": ["ES2020", "DOM", "DOM.Iterable"],

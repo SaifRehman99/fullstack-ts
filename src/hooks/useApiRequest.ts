@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { AxiosResponse } from "axios";
-import makeApiRequest from "../utils/axios.interceptors";
+import makeApiRequest from "utils/axios.interceptors";
 
 interface ApiRequestResult<T> {
   data: T | null;
@@ -16,6 +16,7 @@ const useApiRequest = <T>(apiEndpoint: string, method: string = "GET", formData:
 
   useEffect(() => {
     const fetchData = async () => {
+      setIsLoading(true);
       setData(null);
       try {
         const response: {
