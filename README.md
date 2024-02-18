@@ -1,4 +1,4 @@
-# Ombori Code Test
+<!-- # Ombori Code Test
 
 Hi there, we're really excited that you've made it this far in our interview process and look forward to getting to know you better.
 
@@ -27,4 +27,4 @@ We only ask that you be able to motivate your choices.
 Before submitting your result please make sure that:
 * The code is formatted (including your favorite linter is a good idea); code that does not meet basic readability criteria will be rejected
 * The application resembles what is visible on screenshots in the design folder
-* The application meets criteria listed above in common desktop and mobile browsers
+* The application meets criteria listed above in common desktop and mobile browsers -->
