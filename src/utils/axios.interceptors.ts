@@ -8,11 +8,8 @@ import axios, { AxiosResponse } from "axios";
  * @param header - Request headers (optional).
  * @returns {Promise<{ data: any, response?: AxiosResponse, error?: any }>} - Resolves with response data or an error object.
  */
-export default async function makeApiRequest(
-  path: string,
-  method = "GET",
-  data?: any | null
-): Promise<{ data?: any; response?: AxiosResponse; error?: any; message?: any }> {
+export default async function makeApiRequest(path: string, method = "GET", data?: any | null): Promise<{ data?: any; response?: AxiosResponse; error?: any; message?: any }> {
+  // You can use .env to store this, for now adding this here
   const baseURL = `https://reqres.in/api/users`;
 
   const apiUrl = `${baseURL}${path}`;
