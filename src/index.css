@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Pulse Loading Animation Custom CSS Below */
+.pulse {
+  --pulse-color: #74bf09;
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--pulse-color);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pulse::before,
+.pulse::after {
+  content: "";
+  width: 15rem;
+  height: 15rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--pulse-color);
+  border-radius: 50%;
+  opacity: 0;
+  animation: pulse linear infinite 2.5s;
+}
+
+.pulse::before {
+  animation-delay: 1s;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+
+  25% {
+    opacity: 0.15;
+  }
+
+  75% {
+    opacity: 0.25;
+    transform: translate(-50%, -50%) scale(0.85);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+/* For WebKit-based browsers (Chrome, Safari) */
+/* Customize the scrollbar track */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Customize the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #f2f5f2; /* Change this color to your preferred color */
+  border-radius: 6px;
+  border: 3px solid #fff; /* Change this color to your background color */
+}
+
+/* Customize the scrollbar track on hover */
+::-webkit-scrollbar-track:hover {
+  background-color: #f1f1f1; /* Change this color to your preferred hover color */
+}
