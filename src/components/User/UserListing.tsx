@@ -5,7 +5,7 @@ const UserListing: React.FC<{ user: UserData }> = ({ user }): JSX.Element => {
     <div className="flex mb-3 max-md:mb-2 gap-[30px] max-sm:p-[7px] p-[10px] rounded-[10px] border border-gray-300 overflow-hidden">
       <div className="avatar">
         <div className="w-2/3 max-md:w-20 max-sm:w-16 rounded-full">
-          <img src={user.avatar} />
+          <img src={user.avatar} alt="user-img" />
         </div>
       </div>
 

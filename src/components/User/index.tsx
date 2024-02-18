@@ -9,7 +9,7 @@ import Pulse from "components/shared/Pulse";
 import { useEffect, useState } from "react";
 import { LOADING_DURATION, PER_PAGE } from "constants/index";
 
-const User: React.FC<{}> = ({}): JSX.Element => {
+const User: React.FC<{}> = (): JSX.Element => {
   // Components States Below
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [allUsers, setAllUsers] = useState<UserData[]>([]);
@@ -26,6 +26,7 @@ const User: React.FC<{}> = ({}): JSX.Element => {
     if (users?.data.length) {
       setAllUsers((prevUsers) => [...prevUsers, ...users.data]);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [users?.data.length]);
 
   // Loading Component Pulse

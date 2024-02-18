@@ -45,6 +45,7 @@ const useApiRequest = <T>(apiEndpoint: string, method: string = "GET", formData:
     };
 
     fetchData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [apiEndpoint, method]);
 
   return { data, isLoading, error };
